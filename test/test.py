@@ -4,8 +4,8 @@ from helpers import get_dev, draw_progress_bar
 
 # ---------- CONFIG ----------
 # A = square, B = rectangle
-WIDTH_A, HEIGHT_A = 128, 32
-WIDTH_B, HEIGHT_B = 128, 64
+WIDTH_A, HEIGHT_A = 128, 64
+WIDTH_B, HEIGHT_B = 128, 32
 
 BUS_A, ADDR_A = 1, 0x3C         # /dev/i2c-1
 BUS_B, ADDR_B = 3, 0x3C         # /dev/i2c-3
