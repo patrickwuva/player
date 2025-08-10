@@ -25,9 +25,9 @@ except Exception:
 @lru_cache
 def get_dev(name):
     if name == 'a':
-        ssd1306(i2c(port=BUS_A, address=ADDR_A), width=WIDTH_A, height=HEIGHT_A)
+        return ssd1306(i2c(port=BUS_A, address=ADDR_A), width=WIDTH_A, height=HEIGHT_A)
     else:
-        ssd1306(i2c(port=BUS_B, address=ADDR_B), width=WIDTH_B, height=HEIGHT_B)
+        return ssd1306(i2c(port=BUS_B, address=ADDR_B), width=WIDTH_B, height=HEIGHT_B)
 
 def mmss(seconds):
     seconds = max(0, int(seconds))
